@@ -23,19 +23,22 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.debug footer,
-.debug #web-app {
-    height: 200px;
-    background-color: aqua;
-    border: 1px solid red;
-}
-
-#app-wrap {
-    height: 300px;
-}
-
-footer {
     background-color: grey;
+}
+
+.debug footer {
+    height: 200px;
+    background-color: blue;
+    border: 2px solid red;
+}
+
+.debug header {
+    background-color: rgba(230, 30, 30, 0.5);
+}
+
+.debug aside {
+    display: flex;
+    width: 30px;
+    background-color: green;
+    height: 100%;
 }
