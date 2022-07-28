@@ -20,20 +20,21 @@ body {
 /* ------- DEBUG --------------- */
 
 .web-app {
-    height: 100vh;
+    background-color: grey;
     display: flex;
     flex-direction: column;
-    background-color: grey;
 }
 
 .debug footer {
     height: 200px;
     background-color: blue;
     border: 2px solid red;
+    flex-grow: 1;
 }
 
 .debug header {
     background-color: rgba(230, 30, 30, 0.5);
+    text-align: end;
 }
 
 .debug aside {
@@ -41,4 +42,15 @@ body {
     width: 30px;
     background-color: green;
     height: 100%;
+}
+
+.debug main {
+    width: calc(100% - 30px);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
 }
