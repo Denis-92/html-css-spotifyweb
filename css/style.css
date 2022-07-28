@@ -20,7 +20,6 @@ body {
 /* ------- DEBUG --------------- */
 
 .web-app {
-    background-color: grey;
     display: flex;
     flex-direction: column;
 }
@@ -42,10 +41,16 @@ body {
     width: 30px;
     background-color: green;
     height: 80%;
+    /* height (100% - pixel del footer)
+    per avere effetto giusto
+    quando viene schiacciato in altezza */
 }
 
 .debug main {
     width: calc(100% - 30px);
+    height: 80%;
+    background-color: grey;
+    overflow-y: auto;
 }
 
 .wrap {
@@ -53,4 +58,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     height: 100vh;
+}
+
+.main-content {
+    height: 300vh;
 }
