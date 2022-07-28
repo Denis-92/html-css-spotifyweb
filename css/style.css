@@ -26,7 +26,7 @@ body {
 }
 
 .debug footer {
-    height: 200px;
+    height: 20%;
     background-color: blue;
     border: 2px solid red;
     flex-grow: 1;
@@ -41,7 +41,7 @@ body {
     display: flex;
     width: 30px;
     background-color: green;
-    height: 100%;
+    height: 80%;
 }
 
 .debug main {
