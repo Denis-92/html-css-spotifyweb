@@ -16,46 +16,51 @@ body {
 
 /* ----- CONTENT ----- */
 
-
-/* ------- DEBUG --------------- */
-
-.web-app {
-    display: flex;
-    flex-direction: column;
-}
-
-.debug footer {
-    height: 20%;
-    background-color: blue;
-    border: 2px solid red;
+main {
+    height: calc(100% - 60px);
     flex-grow: 1;
+    overflow-y: auto;
+    position: relative;
 }
 
-.debug header {
-    background-color: rgba(230, 30, 30, 0.5);
-    text-align: end;
+header {
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
+    text-align: end;
+}
+
+aside {
+    display: flex;
+    height: calc(100% - 60px);
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+}
+
+
+/* ------- DEBUG --------------- */
+
+.debug footer {
+    background-color: blue;
+    border: 2px solid red;
+}
+
+.debug header {
+    background-color: rgba(230, 30, 30, 0.5);
+
 }
 
 .debug aside {
-    display: flex;
-    width: 30px;
     background-color: green;
-    height: 80%;
-    /* height (100% - pixel del footer)
-    per avere effetto giusto
-    quando viene schiacciato in altezza */
 }
 
+
 .debug main {
-    width: calc(100% - 30px);
-    height: 80%;
     background-color: grey;
-    overflow-y: auto;
-    position: relative;
 }
 
 .wrap {
