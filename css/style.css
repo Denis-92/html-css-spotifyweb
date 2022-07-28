@@ -1,0 +1,27 @@
+/* ----- GENERICS ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+/* ----- UTILITY ----- */
+
+
+/* ----- CONTENT ----- */
+
+
+/* ------- DEBUG --------------- */
+
+.debug * {
+    height: 300px;
+    background-color: aqua;
+    border: 1px solid red;
+    margin: 10px 0;
+}
