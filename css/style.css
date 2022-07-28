@@ -34,6 +34,10 @@ body {
 .debug header {
     background-color: rgba(230, 30, 30, 0.5);
     text-align: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
 }
 
 .debug aside {
@@ -51,6 +55,7 @@ body {
     height: 80%;
     background-color: grey;
     overflow-y: auto;
+    position: relative;
 }
 
 .wrap {
@@ -62,4 +67,5 @@ body {
 
 .main-content {
     height: 300vh;
+    padding-top: 30px;
 }
