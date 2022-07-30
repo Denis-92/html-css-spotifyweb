@@ -11,6 +11,10 @@ body {
     color: white;
 }
 
+img {
+    width: 100%;
+}
+
 
 /* ----- UTILITY ----- */
 
@@ -78,8 +82,9 @@ header button a {
 /*------- A S I D E ----------*/
 aside {
     height: calc(100% - 60px);
-    /*background-color: black;*/
-    background-color: greenyellow;
+    background-color: black;
+    ;
+    width: 50px;
 }
 
 aside img {
