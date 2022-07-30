@@ -78,11 +78,13 @@ header button a {
 /*------- A S I D E ----------*/
 aside {
     height: calc(100% - 60px);
-    background-color: black;
+    /*background-color: black;*/
+    background-color: greenyellow;
 }
 
 aside img {
     padding: 5px 10px;
+    display: inline;
 }
 
 /*------- F O O T E R ---------*/
@@ -129,9 +131,9 @@ footer {
     display: none;
 }
 
-/*
+
 @media screen and (min-width: 800px) {
     .debug-responsive {
-        display: initial;
+        display: inline-block;
     }
-}*/
+}
