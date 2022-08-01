@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
 
-<body class="debug">
+<body>
 
     <!-- WRAP PAGE ************************************************ -->
     <div class="wrap-page">
@@ -41,6 +44,11 @@
                             <a href="#" class="large-menu bold">PLAYLIST</a>
                         </div>
                         <div>
+                            <button id="add-playlist" class="large-menu">
+                                <a href="#" class="large-menu">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </button>
                             <a href="#" class="large-menu font-grey">Crea Playlist</a>
                         </div>
                         <div>
@@ -212,20 +220,52 @@
 
         <!-- FOOTER *********************************************** -->
         <footer>
+
             <div id="footer-container">
-                <div class="footer-box">
-                    <h2>TRACK</h2>
-                </div>
-                <div id="play-music">
-                    <div>
-                        <h2>PLAY MUSIC</h2>
+
+                <div class="footer-box flex">
+
+                    <div id="music-img">
+                        <img src="img/sinister.jpeg" alt="Sinister album">
                     </div>
+
+                    <div class="flex column">
+                        <h3>Sinister</h3>
+                        <p>Brano</p>
+                        <p>Nome</p>
+                    </div>
+
+                    <div class="flex column">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+
+                </div>
+
+                <div id="play-music">
+
+                    <div>
+
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+
+                    </div>
+
                     <h2>MINUTE OF SONG</h2>
+
                 </div>
+
                 <div class="footer-box">
+
                     <h2>VOLUME</h2>
+
                 </div>
+
             </div>
+
         </footer>
         <!-- /FOOTER/ -->
 

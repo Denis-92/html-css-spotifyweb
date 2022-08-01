@@ -181,6 +181,19 @@ aside a {
     margin: 15px;
 }
 
+#add-playlist {
+    display: inline-block;
+    width: 20%;
+    background-color: gray;
+    margin: 2px;
+}
+
+#add-playlist a {
+    color: black;
+    font-size: 1em;
+    vertical-align: 30%;
+}
+
 /*------- F O O T E R ---------*/
 footer {
     height: 60px;
@@ -193,6 +206,10 @@ footer {
     display: flex;
 }
 
+.footer-box {
+    width: 150px;
+}
+
 #play-music {
     flex-grow: 1;
     display: flex;
@@ -202,6 +219,14 @@ footer {
 
 #play-music div {
     width: 150px;
+}
+
+#music-img {
+    align-self: center;
+}
+
+#music-img img {
+    width: 50%;
 }
 
 
