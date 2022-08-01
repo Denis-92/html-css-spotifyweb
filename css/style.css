@@ -172,6 +172,10 @@ aside p {
     font-size: 0.7rem;
 }
 
+.playlist-menu {
+    margin: 15px;
+}
+
 /*------- F O O T E R ---------*/
 footer {
     height: 60px;
