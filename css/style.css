@@ -205,17 +205,6 @@ footer {
 }
 
 
-/* ------- DEBUG --------------- */
-
-.debug footer #play-music {
-    background-color: rgb(14, 5, 8);
-}
-
-.debug footer .footer-box {
-    background-color: rgb(39, 56, 56);
-}
-
-
 /* ---------- MEDIA QUERY ---------- */
 
 /* SIZE: s */
