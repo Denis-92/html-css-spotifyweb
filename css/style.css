@@ -217,8 +217,46 @@ footer {
     align-items: center;
 }
 
-#play-music div {
+#player-song {
     width: 150px;
+}
+
+#axis-song {
+    height: 3px;
+    border-radius: 10%;
+    flex-grow: 1;
+    background-color: white;
+    position: relative;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+
+#point-in-track {
+    height: 3px;
+    width: 30px;
+    border-radius: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    display: none;
+}
+
+#point-song-cursor {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    display: none;
+}
+
+
+#axis-song:hover #point-in-track,
+#axis-song:hover #point-song-cursor {
+    display: block;
 }
 
 #music-img {
