@@ -15,6 +15,10 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ----- VARIABLES ------*/
 
 /*:root {}*/
@@ -167,9 +171,10 @@ aside img {
     display: none;
 }
 
-aside p {
+aside a {
     vertical-align: 75%;
     font-size: 0.7rem;
+    color: white;
 }
 
 .playlist-menu {
