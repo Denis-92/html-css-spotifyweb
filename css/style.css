@@ -17,7 +17,7 @@ img {
 
 /* ----- VARIABLES ------*/
 
-:root {}
+/*:root {}*/
 
 
 /* ----- UTILITY ----- */
@@ -35,6 +35,14 @@ img {
 
 .text-align-center {
     text-align: center;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.font-grey {
+    color: grey;
 }
 
 .flex {
@@ -62,7 +70,6 @@ main {
     height: calc(100% - 60px);
     flex-grow: 1;
     overflow-y: auto;
-    position: relative;
     background-color:
         rgb(20 25 34);
 }
@@ -113,14 +120,15 @@ main {
 
 /*------ H E A D E R ---------*/
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
+    width: calc(100% - 66px);
     text-align: end;
     background-color:
         rgba(0, 0, 0, 0.5);
     padding: 10px 5px 15px 0;
+    margin-right: 16px;
 }
 
 header button {
@@ -147,11 +155,21 @@ aside {
 aside img {
     padding: 5px 10px;
     display: inline;
+    width: 50px;
 }
 
-#profile {
+#profile img {
     border-radius: 50%;
     background-color: grey;
+}
+
+.large-menu {
+    display: none;
+}
+
+aside p {
+    vertical-align: 75%;
+    font-size: 0.7rem;
 }
 
 /*------- F O O T E R ---------*/
@@ -188,26 +206,43 @@ footer {
     background-color: rgb(39, 56, 56);
 }
 
-.debug-responsive {
-    display: none;
-}
-
 
 /* ---------- MEDIA QUERY ---------- */
 
 /* SIZE: s */
 @media screen and (min-width: 600px) {
-    .debug-responsive {
-        display: inline-block;
+
+    .small-menu {
+        display: none;
     }
+
+    .large-menu {
+        display: initial;
+        width: 100%;
+    }
+
+    aside {
+        width: 150px;
+    }
+
+    main {
+        width: calc(100% - 150px);
+    }
+
+    header {
+        width: calc(100% - 166px);
+    }
+
 }
 
 /* SIZE: md */
 @media screen and (min-width: 800px) {
+
     .content-element {
         width: calc(100% / 4 - 10px);
         padding-right: 10px;
     }
+
 }
 
 /* SIZE: l */
